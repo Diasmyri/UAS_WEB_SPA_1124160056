@@ -8,25 +8,40 @@
   <script>
     tailwind.config = {
       darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Poppins', 'sans-serif']
+          },
+          colors: {
+            tropical: {
+              sky: '#38bdf8',
+              lime: '#84cc16',
+              banana: '#fde047'
+            }
+          }
+        }
+      }
     };
   </script>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Lexend', sans-serif;
+      font-family: 'Poppins', sans-serif;
     }
   </style>
+  <script defer src="script.js"></script>
 </head>
-<body class="bg-gradient-to-br from-lime-50 to-white dark:from-zinc-900 dark:to-zinc-800 text-gray-800 dark:text-lime-100 min-h-screen transition-all duration-300">
+<body class="bg-gradient-to-br from-sky-100 to-white dark:from-zinc-900 dark:to-zinc-800 text-gray-800 dark:text-lime-100 min-h-screen transition-all duration-300">
 
-  <div class="max-w-6xl mx-auto p-6">
+    <!-- Seluruh konten HTML form dan tampilan transaksi akan dimuat di sini -->
+   <div class="max-w-6xl mx-auto p-6">
     <!-- Header -->
-       <div class="max-w-6xl mx-auto px-6 sm:px-10">
     <div class="text-center mb-14">
       <h1 class="text-5xl font-extrabold text-teal-700 dark:text-teal-300 tracking-tight mb-2">Es Cekek Pay</h1>
       <p class="text-gray-600 dark:text-gray-300 text-lg">Transaksi minuman jadi cepat & segar</p>
     </div>
-    
+
     <div class="flex justify-between items-center mb-10">
       <div class="flex items-center gap-4">
         <div class="w-16 h-16 rounded-full overflow-hidden border-4 border-lime-500">
@@ -35,38 +50,38 @@
         
         <div>
           <h1 class="text-3xl font-bold text-lime-600 dark:text-lime-300">Es Cekek Portal</h1>
-          <p class="text-sm leading-5">Dias Mayri<br>NIM: 12345678<br>Global Instituted</p>
+          <p class="text-sm leading-5">Dias Mayri<br>NIM: 1124160056<br>Global Institute</p>
         </div>
       </div>
       <button id="toggleDarkMode" class="px-4 py-2 rounded-lg bg-lime-600 text-white hover:bg-lime-700 dark:bg-yellow-400 dark:text-black dark:hover:bg-yellow-300 transition">Toggle Mode</button>
     </div>
-
-    <div class="grid lg:grid-cols-2 gap-8">
-      <!-- Form Pembayaran -->
-      <div class="bg-white dark:bg-zinc-900 shadow-xl rounded-2xl p-8">
-        <h2 class="text-xl font-semibold mb-6 flex items-center gap-2 text-lime-700 dark:text-lime-200">
-          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
-          Form Pembayaran
-        </h2>
-        <form id="paymentForm" class="space-y-4">
-          <div>
-            <label for="customerName" class="block font-medium">Nama Pelanggan</label>
-            <input id="customerName" name="customerName" type="text" placeholder="Masukkan nama pelanggan" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-lime-400 focus:border-lime-400 dark:bg-zinc-800" required />
-          </div>
-          <div>
-            <label for="customerEmail" class="block font-medium">Email</label>
-            <input id="customerEmail" name="customerEmail" type="email" placeholder="contoh@email.com" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-lime-400 focus:border-lime-400 dark:bg-zinc-800" required />
-          </div>
-          <div>
-            <label for="productSelect" class="block font-medium">Pilih Produk/Layanan</label>
-            <select id="productSelect" name="product" class="w-full mt-1 px-4 py-2 border rounded-lg dark:bg-white dark:text-black" required>
-              <option value="">Pilih produk...</option>
-              <option value="basic" data-price="47000">Tea Jus - Rp 47.000</option>
-              <option value="premium" data-price="65000">Nutrisari - Rp 65.000</option>
-              <option value="professional" data-price="65000">Good Day - Rp 65.000</option>
-              <option value="enterprise" data-price="50000">Pop Ice - Rp 50.000</option>
-            </select>
-          </div>
+  <div class="max-w-6xl mx-auto p-6">
+    <!-- Tempatkan semua form, riwayat transaksi, modal, dan template di sini -->
+     <!-- Form Pembayaran -->
+        <div class="bg-white dark:bg-zinc-900 shadow-xl rounded-2xl p-8">
+            <h2 class="text-xl font-semibold mb-6 flex items-center gap-2 text-lime-700 dark:text-lime-200">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h18M7 15h1m4 0h1m-7 4h12a3 3 0 003-3V8a3 3 0 00-3-3H6a3 3 0 00-3 3v8a3 3 0 003 3z"></path></svg>
+            Form Pembayaran
+            </h2>
+            <form id="paymentForm" class="space-y-4">
+            <div>
+                <label for="customerName" class="block font-medium">Nama Pelanggan</label>
+                <input id="customerName" name="customerName" type="text" placeholder="Masukkan nama pelanggan" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-lime-400 focus:border-lime-400 dark:bg-zinc-800" required />
+            </div>
+            <div>
+                <label for="customerEmail" class="block font-medium">Email</label>
+                <input id="customerEmail" name="customerEmail" type="email" placeholder="contoh@email.com" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-lime-400 focus:border-lime-400 dark:bg-zinc-800" required />
+            </div>
+            <div>
+                <label for="productSelect" class="block font-medium">Pilih Produk/Layanan</label>
+                <select id="productSelect" name="product" class="w-full mt-1 px-4 py-2 border rounded-lg dark:bg-white dark:text-black" required>
+                <option value="">Pilih produk...</option>
+                <option value="basic" data-price="47000">Tea Jus - Rp 47.000</option>
+                <option value="premium" data-price="65000">Nutrisari - Rp 65.000</option>
+                <option value="professional" data-price="65000">Good Day - Rp 65.000</option>
+                <option value="enterprise" data-price="50000">Pop Ice - Rp 50.000</option>
+                </select>
+            </div>
           <div>
             <label for="quantity" class="block font-medium">Jumlah</label>
             <input id="quantity" name="quantity" type="number" min="1" value="1" class="w-full mt-1 px-4 py-2 border rounded-lg focus:ring-lime-400 focus:border-lime-400 dark:bg-zinc-800" required />
@@ -159,8 +174,7 @@
         <span class="transaction-status px-2 py-1 rounded-full text-xs bg-lime-100 text-lime-800">Berhasil</span>
       </div>
     </div>
-  </template>
+  </div>
 
-  <script src="script.js"></script>
 </body>
-</html> 
+</html>
