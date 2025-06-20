@@ -1,49 +1,54 @@
-# Open Payment Portal
+🧋 Es Cekek Pay – Portal Pembayaran Minuman
+👤 Identitas Mahasiswa
+Nama: Dias Mayri
 
-## 👤 Identitas Mahasiswa
-- **Nama:** Dias Mayri
-- **NIM:** 1124160056
-- **Kelas:** TI24SE3
-- **Mata Kuliah:** Perancangan Web (CDM224)
+NIM: 1124160056
 
----
+Kelas: TI24SE3
 
-## 🧾 Deskripsi Aplikasi
-Aplikasi ini adalah **Single Page Application (SPA)** berbasis **HTML, Tailwind CSS, dan JavaScript** untuk mengelola transaksi dan pembayaran secara interaktif tanpa reload halaman.
+Mata Kuliah: Perancangan Web (CDM224)
 
----
+🧾 Deskripsi Aplikasi
+Es Cekek Pay adalah aplikasi Single Page Application (SPA) berbasis HTML, Tailwind CSS, dan JavaScript, yang dirancang untuk memproses pembayaran minuman dengan cepat, responsif, dan tanpa reload halaman.
 
-## ✨ Fitur Unggulan
+✨ Fitur Unggulan
+1. ✅ Form Pembayaran Interaktif
 
-- ✅ **Form Pembayaran Dinamis**
-  - Input nama, email, produk, jumlah, metode bayar, dan kode promo.
-  - Validasi otomatis (email, jumlah, metode).
+Input: nama pelanggan, email, produk minuman, jumlah, metode pembayaran, dan kode promo.
 
-- ✅ **Kode Promo Otomatis**
-  - Contoh kode: `HEMAT10`, `SUPERHEMAT`, `NEWUSER`, dsb.
+Validasi otomatis untuk input kosong, email valid, dan pemilihan metode.
 
-- ✅ **Statistik Transaksi**
-  - Total transaksi, pendapatan, dan rata-rata otomatis update.
+2. ✅ Kode Promo Dinamis
 
-- ✅ **Dark/Light Mode Toggle**
-  - Tersimpan otomatis via `localStorage`.
+Contoh kode: HEMAT10, SUPERHEMAT, POTONGAN30, NEWUSER.
 
-- ✅ **Tampilan Responsif & Modern**
-  - Desain ringan, dengan dominasi warna:
-    - Light mode: Putih & Biru Tua
-    - Dark mode: Abu & Oranye
+3. ✅ Statistik Transaksi Real-time
 
-- ✅ **Foto Pribadi Sebagai Logo**
-  - Ditampilkan di header aplikasi.
+Menampilkan total transaksi, pendapatan, dan rata-rata transaksi yang diperbarui otomatis.
 
----
+4. ✅ Dark Mode & Light Mode
 
-## 🧭 Cara Menjalankan
+Toggle tema dengan penyimpanan preferensi ke localStorage.
 
-1. **Download Repository** dari GitHub.
-2. **Buka `index.html`** langsung di browser (Chrome/Firefox/Edge).
-3. Tidak perlu server lokal — 100% statis dan SPA.
+5. ✅ Desain Visual Tropikal
 
----
+Dominasi warna:
 
+Light mode: Putih, Biru Langit, dan Lime
 
+Dark mode: Abu Gelap & Kuning Cerah
+
+1. ✅ Tampilan Responsif
+
+Menggunakan Tailwind CSS untuk pengalaman optimal di berbagai ukuran layar.
+
+2. ✅ Logo Pribadi
+
+Menampilkan foto pengguna (Dias Mayri) sebagai ikon header aplikasi.
+
+🧭 Cara Menjalankan
+1. Unduh file proyek atau clone repositori dari GitHub.
+
+2. Buka file index.html langsung di browser (Chrome, Firefox, Edge, dsb.).
+
+3. Tidak memerlukan server lokal atau koneksi internet — 100% statis dan berjalan offline.
